@@ -1,6 +1,30 @@
+/* Variables */
+:root {
+    --candyColor: #ea1c2c;
+}
+
 body {
     background-color: #f5d9d5;
     font-family: 'Nunito', sans-serif;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: #fff;
+}
+
+#mainNavbar .nav-link:hover {
+    color: var(--candyColor);
+}
+
+#mainNavbar .navbar-brand {
+    color: var(--candyColor);
+    font-size: 1.5rem;
+    /* repetitive, but, for some reason, only having the font size above isn't 'reaching' this element*/
 }
 
 nav {
