@@ -1,6 +1,7 @@
 /* Variables */
 :root {
     --candyColor: #ea1c2c;
+    --thinFontWeight: 100;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
 
 #mainNavbar {
     font-size: 1.5rem;
-    font-weight: 100;
+    font-weight: var(--thinFontWeight);
 }
 
 #mainNavbar .nav-link {
@@ -27,7 +28,8 @@ body {
     /* repetitive, but, for some reason, only having the font size above isn't 'reaching' this element*/
 }
 
-nav {
+nav,
+h1 {
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -36,4 +38,19 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+#headingGroup span {
+    color: var(--candyColor);
+}
+
+#headingGroup h1 {
+    font-weight: var(--thinFontWeight);
+    font-size: 4rem;
+}
+
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-size: 3rem;
+    }
 }
